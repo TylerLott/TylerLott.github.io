@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Data Visualization Final Project</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body onload="init()">
-    <div>Header</div>
-    <div>
-      Data
-      <svg></svg>
-      <script src="index.js"></script>
+    <div class="data-container">
+      <div class="data-header"></div>
+      <div class="plot-container">
+        <div id="dataViewer"></div>
+      </div>
+      <div class="details">det</div>
+      <div class="legend">leg</div>
+      <div class="next-button-container"><h2>></h2></div>
+      <div class="timeline">time</div>
     </div>
-    <div>footer</div>
   </body>
 </html>

@@ -1,0 +1,359 @@
+ElectionYear,CandidateName,HomeState,Incumbent?,CandParty,CandPartyAbbrev,PopularVote,PopVoteShare,ElectoralVotes,ElecVoteShare
+1788,George Washington,Virginia,N,Independent,I,"39,624",100.00%,69,100.00%
+1788,John Adams,Massachusetts,N,Federalist,F,0,0.00%,34,49.28%
+1788,John Jay,New York,N,Federalist,F,0,0.00%,9,13.04%
+1788,Robert H. Harrison,Maryland,N,Federalist,F,0,0.00%,6,8.70%
+1788,John Rutledge,South Carolina,N,Federalist,F,0,0.00%,6,8.70%
+1788,John Hancock,Massachusetts,N,Federalist,F,0,0.00%,4,5.80%
+1788,George Clinton,New York,N,Anti-Federalist,AF,0,0.00%,3,4.35%
+1788,Samuel Huntington,Connecticut,N,Federalist,F,0,0.00%,2,2.90%
+1788,John Milton,Georgia,N,Federalist,F,0,0.00%,2,2.90%
+1788,James Armstrong,Georgia,N,Federalist,F,0,0.00%,1,1.45%
+1788,Benjamin Lincoln,Massachusetts,N,Federalist,F,0,0.00%,1,1.45%
+1788,Edward Telfair,Georgia,N,Anti-Federalist,AF,0,0.00%,1,1.45%
+1792,George Washington,Virginia,Y,Independent,I,"28,300",100.00%,132,100.00%
+1792,John Adams,Massachusetts,N,Federalist,F,0,0.00%,77,58.33%
+1792,George Clinton,New York,N,Democratic-Republican,DR,0,0.00%,50,37.88%
+1792,Thomas Jefferson,Virginia,N,Democratic-Republican,DR,0,0.00%,4,3.03%
+1792,Aaron Burr,New York,N,Democratic-Republican,DR,0,0.00%,1,0.76%
+1796,John Adams,Massachusetts,N,Federalist,F,"35,726",53.45%,71,51.45%
+1796,Thomas Jefferson,Virginia,N,Democratic-Republican,DR,"31,115",46.55%,68,49.28%
+1796,Thomas Pinckney,South Carolina,N,Federalist,F,0,0.00%,59,42.75%
+1796,Aaron Burr,New York,N,Democratic-Republican,DR,0,0.00%,30,21.74%
+1796,Samuel Adams,Massachusetts,N,Democratic-Republican,DR,0,0.00%,15,10.87%
+1796,Oliver Ellsworth,Connecticut,N,Federalist,F,0,0.00%,11,7.97%
+1796,George Clinton,New York,N,Democratic-Republican,DR,0,0.00%,7,5.07%
+1796,John Jay,New York,N,Federalist,F,0,0.00%,5,3.62%
+1796,James Iredell,North Carolina,N,Federalist,F,0,0.00%,3,2.17%
+1796,George Washington,Virginia,N,Independent,I,0,0.00%,2,1.45%
+1796,John Henry,Maryland,N,Federalist,F,0,0.00%,2,1.45%
+1796,Samuel Johnston,North Carolina,N,Federalist,F,0,0.00%,2,1.45%
+1796,Charles C. Pinckney,South Carolina,N,Federalist,F,0,0.00%,1,0.72%
+1800,Thomas Jefferson,Virginia,N,Democratic-Republican,DR,"45,467",60.51%,73,52.90%
+1800,Aaron Burr,New York,N,Democratic-Republican,DR,0,0.00%,73,52.90%
+1800,John Adams,Massachusetts,Y,Federalist,F,"29,621",39.42%,65,47.10%
+1800,Charles C. Pinckney,South Carolina,N,Federalist,F,0,0.00%,64,46.38%
+1800,John Jay,New York,N,Federalist,F,0,0.00%,1,0.72%
+1804,Thomas Jefferson,Virginia,Y,Democratic-Republican,DR,"104,110",72.79%,162,92.05%
+1804,Charles C. Pinckney,South Carolina,N,Federalist,F,"38,919",27.21%,14,7.95%
+1808,James Madison,Virginia,N,Democratic-Republican,DR,"124,732",64.73%,122,69.71%
+1808,Charles C. Pinckney,South Carolina,N,Federalist,F,"62,431",32.40%,47,26.86%
+1808,George Clinton,New York,N,Democratic-Republican,DR,0,0.00%,6,3.43%
+1808,Jamers Monroe,Virginia,N,Democratic-Republican,DR,"4,848",2.52%,0,0.00%
+1812,James Madison,Virginia,Y,Democratic-Republican,DR,"140,431",50.37%,128,58.99%
+1812,DeWitt Clinton,New York,N,Democratic-Republican,DR,"132,781",47.63%,89,41.01%
+1812,Rufus King,New York,N,Federalist,F,"5,574",2.00%,0,0.00%
+1816,James Monroe,Virginia,N,Democratic-Republican,DR,"76,592",68.16%,183,84.33%
+1816,Rufus King,New York,N,Federalist,F,"34,740",30.92%,34,15.67%
+1820,James Monroe,Virginia,Y,Democratic-Republican,DR,"87,343",80.61%,231,99.57%
+1820,DeWitt Clinton,New York,N,Democratic-Republican,DR,"1,893",1.75%,0,0.00%
+1820,John Q. Adams,Massachusetts,N,Democratic-Republican,DR,"2,215",2.04%,1,0.43%
+1824,Andrew Jackson,Tennessee,N,Democratic-Republican,DR,"151,271",41.35%,99,37.93%
+1824,John Q. Adams,Massachusetts,N,Democratic-Republican,DR,"113,122",30.92%,84,32.18%
+1824,William H. Crawford,Georgia,N,Democratic-Republican,DR,"40,856",11.17%,41,15.71%
+1824,Henry Clay,Kentucky,N,Democratic-Republican,DR,"47,531",12.99%,37,14.18%
+1828,Andrew Jackson,Tennessee,N,Democratic,D,"638,348",55.33%,171,65.52%
+1828,John Q. Adams,Massachusetts,Y,National Republican,NR,"507,440",43.98%,83,31.80%
+1832,Andrew Jackson,Tennessee,Y,Democratic,D,"701,780",54.23%,219,76.57%
+1832,Henry Clay Sr.,Kentucky,N,National Republican,NR,"484,205",37.42%,49,17.13%
+1832,John Floyd,Virginia,N,Nullifier,N,0,0.00%,11,3.85%
+1832,William Wirt,Maryland,N,Anti-Masonic,AM,"100,715",7.78%,7,2.45%
+1836,Martin Van Buren,New York,N,Democratic,D,"764,176",50.83%,170,57.82%
+1836,William H. Harrison,Ohio,N,Whig,W,"550,816",36.63%,73,24.83%
+1836,Hugh Lawson White,Tennessee,N,Whig,W,"146,107",9.72%,26,8.84%
+1836,Daniel Webster,Massachusetts,N,Whig,W,"41,201",2.74%,14,4.76%
+1836,Willie Person Mangum,North Carolina,N,Whig,W,0,0.00%,11,3.74%
+1840,William H. Harrison,Ohio,N,Whig,W,"1,275,390",52.88%,234,79.59%
+1840,Martin Van Buren,New York,Y,Democratic,D,"1,128,854",46.81%,60,20.41%
+1840,James G. Birney,New York,N,Liberty (1800s),LY,"6,797",0.28%,0,0.00%
+1844,James K. Polk,Tennessee,N,Democratic,D,"1,339,494",49.54%,170,61.82%
+1844,Henry Clay Sr.,Kentucky,N,Whig,W,"1,300,004",48.08%,105,38.18%
+1844,James G. Birney,Michigan,N,Liberty (1800s),LY,"62,103",2.30%,0,0.00%
+1848,Zachary Taylor,Louisiana,N,Whig,W,"1,361,393",47.28%,163,56.21%
+1848,Lewis Cass,Michigan,N,Democratic,D,"1,223,460",42.49%,127,43.79%
+1848,Martin Van Burin,New York,N,Free Soil,FS,"291,501",10.12%,0,0.00%
+1848,Gerrit Smith,New York,N,Liberty (1800s),LY,"2,545",0.09%,0,0.00%
+1852,Franklin Pierce,New Hampshire,N,Democratic,D,"1,607,510",50.84%,254,85.81%
+1852,Winfield Scott,New Jersey,N,Whig,W,"1,385,942",43.83%,42,14.19%
+1852,John Parker Hale,New Hampshire,N,Free Soil,FS,"155,210",4.91%,0,0.00%
+1852,Daniel Webster,Massachusetts,N,Union,U,"6,994",0.22%,0,0.00%
+1852,Jacob Broom,Pennsylvania,N,Know Nothing,KN,"2,566",0.08%,0,0.00%
+1852,George M. Troup,Georgia,N,Southern Rights,SR,"2,331",0.07%,0,0.00%
+1856,James Buchanan Jr.,Pennsylvania,N,Democratic,D,"1,836,072",45.26%,174,58.78%
+1856,John C. Fremont,California,N,Republican,R,"1,342,345",33.09%,114,38.51%
+1856,Millard Fillmore,New York,N,Know Nothing,KN,"873,053",21.52%,8,2.70%
+1860,Abraham Lincoln,Illinois,N,Republican,R,"1,865,908",39.82%,180,59.41%
+1860,John C. Breckenridge,Kentucky,N,Democratic,D,"848,019",18.10%,72,23.76%
+1860,John bell,Tennessee,N,Constitutional Union,CU,"590,901",12.61%,39,12.87%
+1860,Stephen A. Douglas,Illinois,N,Democratic,D,"1,380,202",29.46%,12,3.96%
+1864,Abraham Lincoln,Illinois,Y,Republican,R,"2,218,388",55.02%,212,90.99%
+1864,George B. McClellan,New Jersey,N,Democratic,D,"1,812,807",44.96%,21,9.01%
+1868,Ulysses S. Grant,Illinois,N,Republican,R,"3,013,650",52.66%,214,72.79%
+1868,Horatio Seymour,New York,N,Democratic,D,"2,708,744",47.34%,80,27.21%
+1872,Ulysses S. Grant,Illinois,Y,Republican,R,"3,598,235",55.63%,286,81.25%
+1872,Thomas A. Hendricks,Indiana,N,Democratic,D,0,0.00%,42,11.93%
+1872,Benjamin G. Brown,Missouri,N,Liberal Republican,LR,0,0.00%,18,5.11%
+1872,Horace Greeley,New York,N,Liberal Republican,LR,"2,864,761",44.29%,3,0.85%
+1872,Charles J. Jenkins,Georgia,N,Democratic,D,0,0.00%,2,0.57%
+1872,David Davis,Illinois,N,Liberal Republican,LR,0,0.00%,1,0.28%
+1872,Charles O'Conor,New York,N,Straight-Out Democrats,SOD,"18,602",0.29%,0,0.00%
+1872,James Black,Pennsylvania,N,Prohibition,P,"5,607",0.09%,0,0.00%
+1876,Rutherford B. Hayes,Ohio,N,Republican,R,"4,034,142",47.92%,185,50.14%
+1876,Samuel J. Tilden,New York,N,Democratic,D,"4,286,808",50.92%,184,49.86%
+1876,Peter Cooper,New York,N,Greenback,GB,"83,726",0.99%,0,0.00%
+1876,Green C. Smith,Washington DC,N,Prohibition,P,"6,945",0.08%,0,0.00%
+1876,James Walker,Illinois,N,American National,AN,463,0.01%,0,0.00%
+1880,James A. Garfield,Ohio,N,Republican,R,"4,454,443",48.32%,214,57.99%
+1880,Winfield S. Hancock,Pennsylvania,N,Democratic,D,"4,444,976",48.21%,155,42.01%
+1880,James B. Weaver,Iowa,N,Greenback,GB,"308,649",3.35%,0,0.00%
+1880,Neal Dow,Maine,N,Prohibition,P,"10,364",0.11%,0,0.00%
+1880,John W. Phelps,Vermont,N,Anti-Masonic,AM,"1,045",0.01%,0,0.00%
+1884,Grover Cleveland,New York,N,Democratic,D,"4,914,482",48.85%,219,54.61%
+1884,James G. Blaine,Maine,N,Republican,R,"4,856,903",48.28%,182,45.39%
+1884,John P. St. John,Kansas,N,Prohibition,P,"147,482",1.47%,0,0.00%
+1884,Benjamin F. Butler,Massachusetts,N,Greenback,GB,"134,294",1.33%,0,0.00%
+1884,Belva A. B. Lockwood,Washington DC,N,Equal Rights,ER,"4,194",0.04%,0,0.00%
+1888,Benjamin Harrison,Indiana,N,Republican,R,"5,443,892",47.82%,233,58.10%
+1888,Grover Cleveland,New York,Y,Democratic,D,"5,534,488",48.62%,168,41.90%
+1888,Clinton B. Fisk,New Jersey,N,Prohibition,P,"249,819",2.19%,0,0.00%
+1888,Alson Jenness Streeter,Illinois,N,Union Labor,UL,"146,602",1.29%,0,0.00%
+1892,Grover Cleveland,New York,N,Democratic,D,"5,553,898",46.02%,277,62.39%
+1892,Benjamin Harrison,Indiana,Y,Republican,R,"5,190,819",43.01%,145,32.66%
+1892,James B. Weaver,Iowa,N,Populist,PL,"1,026,595",8.51%,22,4.95%
+1892,John Bidwell,California,N,Prohibition,P,"270,879",2.24%,0,0.00%
+1892,Simon Wing,Massachusetts,N,Socialist Labor,SL,"21,173",0.18%,0,0.00%
+1896,William McKinley Jr.,Ohio,N,Republican,R,"7,111,607",51.03%,271,60.63%
+1896,William J. Bryan,Nebraska,N,Democratic,D,"6,509,052",46.70%,176,39.37%
+1896,John M. Palmer,Illinois,N,National Democratic,ND,"134,645",0.97%,0,0.00%
+1896,Joshua Levering,Maryland,N,Prohibition,P,"131,312",0.94%,0,0.00%
+1896,Charles H. Matchett,New York,N,Socialist Labor,SL,"36,373",0.26%,0,0.00%
+1896,Charles E. Bentley,Nebraska,N,Prohibition,P,"13,968",0.10%,0,0.00%
+1900,William McKinley Jr.,Ohio,Y,Republican,R,"7,228,864",51.64%,292,65.32%
+1900,William J. Bryan,Nebraska,N,Democratic,D,"6,370,932",45.52%,155,34.68%
+1900,John G. Woolley,Illinois,N,Prohibition,P,"210,864",1.51%,0,0.00%
+1900,Eugene V. Debs,Indiana,N,Social Democratic,SD,"87,945",0.63%,0,0.00%
+1900,Wharton Barker,Pennsylvania,N,Populist,PL,"50,989",0.36%,0,0.00%
+1900,Joseph F. Malloney,Massachusetts,N,Socialist Labor,SL,"40,943",0.29%,0,0.00%
+1904,Theodore Roosevelt Jr.,New York,Y,Republican,R,"7,630,457",56.42%,336,70.59%
+1904,Alton B. Parker,New York,N,Democratic,D,"5,083,880",37.59%,140,29.41%
+1904,Eugene V. Debs,Indiana,N,Socialist,S,"402,810",2.98%,0,0.00%
+1904,Silas C. Swallow,Pennsylvania,N,Prohibition,P,"259,102",1.92%,0,0.00%
+1904,Thomas E. Watson,Georgia,N,Populist,PL,"114,070",0.84%,0,0.00%
+1904,Charles H. Corregan,New York,N,Socialist Labor,SL,"33,454",0.25%,0,0.00%
+1908,William H. Taft,Ohio,N,Republican,R,"7,678,335",51.57%,321,66.46%
+1908,William J. Bryan,Nebraska,N,Democratic,D,"6,408,979",43.04%,162,33.54%
+1908,Eugene V. Debs,Indiana,N,Socialist,S,"420,852",2.83%,0,0.00%
+1908,Eugene W. Chafin,Illinois,N,Prohibition,P,"254,087",1.71%,0,0.00%
+1908,Thomas Louis Hisgen,Massachusetts,N,Independence,ID,"82,574",0.55%,0,0.00%
+1908,Thomas E. Watson,Georgia,N,Populist,PL,"28,862",0.19%,0,0.00%
+1908,August Gillhaus,New York,N,Socialist Labor,SL,"14,031",0.09%,0,0.00%
+1912,Woodrow Wilson,New Jersey,N,Democratic,D,"6,296,284",41.84%,435,81.92%
+1912,Theodore Roosevelt Jr.,New York,N,Progressive,PR,"4,122,721",27.40%,88,16.57%
+1912,William H. Taft,Ohio,Y,Republican,R,"3,486,242",23.17%,8,1.51%
+1912,Eugene V. Debs,Indiana,N,Socialist,S,"901,551",5.99%,0,0.00%
+1912,Eugene W. Chafin,Arizona,N,Prohibition,P,"208,156",1.38%,0,0.00%
+1912,Arthur Elmer Reimer,Massachusetts,N,Socialist Labor,SL,"29,324",0.19%,0,0.00%
+1916,Woodrow Wilson,New Jersey,Y,Democratic,D,"9,126,868",49.24%,277,52.17%
+1916,Charles E. Hughes Sr.,New York,N,Republican,R,"8,548,728",46.12%,254,47.83%
+1916,Allan L. Benson,New York,N,Socialist,S,"590,524",3.19%,0,0.00%
+1916,James F. Hanly,Indiana,N,Prohibition,P,"221,302",1.19%,0,0.00%
+1916,Arthur Elmer Reimer,Massachusetts,N,Socialist Labor,SL,"15,295",0.08%,0,0.00%
+1920,Warren G. Harding,Ohio,N,Republican,R,"16,144,093",60.32%,404,76.08%
+1920,James M. Cox,Ohio,N,Democratic,D,"9,139,661",34.15%,127,23.92%
+1920,Eugene V. Debs,Indiana,N,Socialist,S,"913,693",3.41%,0,0.00%
+1920,Parley P. Christensen,Illinois,N,Farmer-Labor,FL,"265,398",0.99%,0,0.00%
+1920,Aaron S. Watkins,Indiana,N,Prohibition,P,"188,787",0.71%,0,0.00%
+1920,James E. Ferguson Jr.,Texas,N,American (1920),A1,"47,968",0.18%,0,0.00%
+1920,William W. Cox,Missouri,N,Socialist Labor,SL,"31,084",0.12%,0,0.00%
+1920,Robert C. Macauley,Pennsylvania,N,Single Tax,ST,"5,750",0.02%,0,0.00%
+1924,Calvin Collidge Jr.,Massachusetts,Y,Republican,R,"15,723,789",54.04%,382,71.94%
+1924,John W. Davis,West Virginia,N,Democratic,D,"8,386,242",28.82%,136,25.61%
+1924,Robert M. La Follette Sr.,Wisconsin,N,Progressive,PR,"4,831,706",16.61%,13,2.45%
+1924,Herman P. Faris,Missouri,N,Prohibition,P,"55,951",0.19%,0,0.00%
+1924,William E. Foster,Massachusetts,N,Communist,C,"38,669",0.13%,0,0.00%
+1924,Frank T. Johns,Oregon,N,Socialist Labor,SL,"28,633",0.10%,0,0.00%
+1924,Gilbert O. Nations,Washington DC,N,American (1924),A2,"24,325",0.08%,0,0.00%
+1928,Herbert C. Hoover,California,N,Republican,R,"21,427,123",58.21%,444,83.62%
+1928,Alfred E. Smith,New York,N,Democratic,D,"15,015,464",40.80%,87,16.38%
+1928,Norman M. Thomas,New York,N,Socialist,S,"267,478",0.73%,0,0.00%
+1928,William E. Foster,Massachusetts,N,Communist,C,"48,551",0.13%,0,0.00%
+1928,Verne L. Reynolds,Michigan,N,Socialist Labor,SL,"21,590",0.06%,0,0.00%
+1928,William F. Varney,New York,N,Prohibition,P,"20,095",0.05%,0,0.00%
+1928,Frank Webb,California,N,Farmer-Labor,FL,"6,390",0.02%,0,0.00%
+1932,Franklin D. Roosevelt,New York,N,Democratic,D,"22,821,277",57.41%,472,88.89%
+1932,Herbert C. Hoover,California,Y,Republican,R,"15,761,254",39.65%,59,11.11%
+1932,Norman M. Thomas,New York,N,Socialist,S,"884,885",2.23%,0,0.00%
+1932,William E. Foster,Illinois,N,Communist,C,"103,307",0.26%,0,0.00%
+1932,William D. Upshaw,Georgia,N,Prohibition,P,"81,905",0.21%,0,0.00%
+1932,William H. Harvey,Arkansas,N,Liberty (1900s),LB,"53,425",0.13%,0,0.00%
+1932,Verne L. Reynolds,New York,N,Socialist Labor,SL,"34,038",0.09%,0,0.00%
+1932,Jacob S. Coxey Sr.,Ohio,N,Farmer-Labor,FL,"7,431",0.02%,0,0.00%
+1936,Franklin D. Roosevelt,New York,Y,Democratic,D,"27,752,648",60.80%,523,98.49%
+1936,Alfred M. Landon,Kansas,N,Republican,R,"16,681,862",36.54%,8,1.51%
+1936,William F. Lemke,North Dakota,N,Union (1936),UN,"892,378",1.95%,0,0.00%
+1936,Norman M. Thomas,New York,N,Socialist,S,"187,910",0.41%,0,0.00%
+1936,Earl R. Browder,Kansas,N,Communist,C,"79,315",0.17%,0,0.00%
+1936,David L. Colvin,New York,N,Prohibition,P,"37,646",0.08%,0,0.00%
+1936,John W. Aiken,Connecticut,N,Socialist Labor,SL,"12,799",0.03%,0,0.00%
+1940,Franklin D. Roosevelt,New York,Y,Democratic,D,"27,313,945",54.74%,449,84.56%
+1940,Wendell L. Willkie,New York,N,Republican,R,"22,347,744",44.78%,82,15.44%
+1940,Norman M. Thomas,New York,N,Socialist,S,"116,599",0.23%,0,0.00%
+1940,Roger W. Babson,Massachusetts,N,Prohibition,P,"57,903",0.12%,0,0.00%
+1940,Earl R. Browder,Kansas,N,Communist,C,"48,557",0.10%,0,0.00%
+1940,John W. Aiken,Connecticut,N,Socialist Labor,SL,"14,883",0.03%,0,0.00%
+1944,Franklin D. Roosevelt,New York,Y,Democratic,D,"25,612,916",53.39%,432,81.36%
+1944,Thomas E. Dewey,New York,N,Republican,R,"22,017,929",45.89%,99,18.64%
+1944,Norman M. Thomas,New York,N,Socialist,S,"143,238",0.30%,0,0.00%
+1944,Claude A. Watson,California,N,Prohibition,P,"79,017",0.16%,0,0.00%
+1944,Edward A. Teichert,Pennsylvania,N,Socialist Labor,SL,"45,188",0.09%,0,0.00%
+1948,Harry S. Truman,Missouri,Y,Democratic,D,"24,179,347",49.55%,303,57.06%
+1948,Thomas E. Dewey,New York,N,Republican,R,"21,991,292",45.07%,189,35.59%
+1948,James S. Thurmond Sr.,South Carolina,N,States' Rights Democratic,SD,"1,175,930",2.41%,39,7.34%
+1948,Henry A. Wallace,New York,N,Progressive,PR,"1,157,328",2.37%,0,0.00%
+1948,Norman M. Thomas,New York,N,Socialist,S,"139,569",0.29%,0,0.00%
+1948,Claude A. Watson,California,N,Prohibition,P,"103,708",0.21%,0,0.00%
+1948,Edward A. Teichert,Pennsylvania,N,Socialist Labor,SL,"29,244",0.06%,0,0.00%
+1948,Farrell Dobbs,Minnesota,N,Socialist Workers,SW,"13,613",0.03%,0,0.00%
+1952,Dwight D. Eisenhower,New York,N,Republican,R,"34,075,529",55.18%,442,83.24%
+1952,Adlai E. Stevenson II,Illinois,N,Democratic,D,"27,375,095",44.33%,89,16.76%
+1952,Vincent Hallinan,California,N,Progressive,PR,"140,746",0.23%,0,0.00%
+1952,Stuart Hamblen,Texas,N,Prohibition,P,"73,412",0.12%,0,0.00%
+1952,Eric Hass,New York,N,Socialist Labor,SL,"30,406",0.05%,0,0.00%
+1952,Darlington Hoopes,Pennsylvania,N,Socialist,S,"20,203",0.03%,0,0.00%
+1952,Douglas MacArthur,Arkansas,N,Constitution,CO,"17,205",0.03%,0,0.00%
+1952,Farrell Dobbs,Minnesota,N,Socialist Workers,SW,"10,312",0.02%,0,0.00%
+1956,Dwight D. Eisenhower,New York,Y,Republican,R,"35,579,180",57.37%,457,86.06%
+1956,Adlai E. Stevenson II,Illinois,N,Democratic,D,"26,028,028",41.97%,73,13.75%
+1956,Thomas C. Andrews,Virginia,N,States' Rights Democratic,SD,"196,108,956",316.20%,0,0.00%
+1956,Eric Hass,New York,N,Socialist Labor,SL,"44,300",0.07%,0,0.00%
+1956,Enoch A. Holtwick,Illinois,N,Prohibition,P,"41,937",0.07%,0,0.00%
+1956,Farrell Dobbs,New York,N,Socialist Workers,SW,"7,797",0.01%,0,0.00%
+1956,Harry F. Byrd Sr.,Virginia,N,States' Rights Democratic,SD,"2,657",0.00%,0,0.00%
+1956,Darlington Hoopes,Pennsylvania,N,Socialist,S,"2,128",0.00%,0,0.00%
+1956,Henry B. Krajewski,New Jersey,N,American Third,AT,"1,829",0.00%,0,0.00%
+1956,Gerald L. K. Smith,Michigan,N,Christian Nationalist,CN,8,0.00%,0,0.00%
+1956,Walter B. Jones,Alabama,N,Democratic,D,0,0.00%,1,0.19%
+1960,John F. Kennedy,Massachusetts,N,Democratic,D,"34,220,984",49.72%,303,56.42%
+1960,Richard M. Nixon,California,N,Republican,R,"34,108,157",49.55%,219,40.78%
+1960,Harry F. Byrd Sr.,Virginia,N,Democratic,D,"610,409",0.89%,15,2.79%
+1960,Eric Hass,New York,N,Socialist Labor,SL,"47,522",0.07%,0,0.00%
+1960,Rutherford L. Decker,Missouri,N,Prohibition,P,"46,203",0.07%,0,0.00%
+1960,Orval E. Faubus,Arkansas,N,States' Rights Democratic,SD,"44,984",0.07%,0,0.00%
+1960,Farrell Dobbs,New York,N,Socialist Workers,SW,"40,175",0.06%,0,0.00%
+1960,Charles L. Sullivan,Mississippi,N,Constitution,CO,"18,162",0.03%,0,0.00%
+1960,Joseph Bracken Lee,Utah,N,Conservative,CS,"8,708",0.01%,0,0.00%
+1964,Lyndon B. Johnson,Texas,Y,Democratic,D,"43,127,041",61.05%,486,90.33%
+1964,Barry M. Goldwater,Azirona,N,Republican,R,"27,175,754",38.47%,52,9.67%
+1964,Eric Hass,New York,N,Socialist Labor,SL,"45,189",0.06%,0,0.00%
+1964,Clifton DeBerry,Illinois,N,Socialist Workers,SW,"32,706",0.05%,0,0.00%
+1964,Earle H. Munn,Michigan,N,Prohibition,P,"23,267",0.03%,0,0.00%
+1964,John Kasper,New York,N,States' Rights Democratic,SD,"6,953",0.01%,0,0.00%
+1964,Joseph B. Lightburn,West Virginia,N,Constitution,CO,5061,0.01%,0,0.00%
+1968,Richard M. Nixon,New York,N,Republican,R,"31,783,783",43.42%,301,55.95%
+1968,Hubert H. Humphrey,Minnesota,N,Democratic,D,"31,271,839",42.72%,191,35.50%
+1968,George C. Wallace,Alabama,N,American Independent,AI,"9,901,118",13.53%,46,8.55%
+1972,Richard M. Nixon,California,Y,Republican,R,"47,168,710",60.67%,520,96.65%
+1972,George S. McGovern,South Dakota,N,Democratic,D,"29,173,222",37.52%,17,3.16%
+1972,John G. Schmitz,California,N,American Independent,AI,"1,100,868",1.42%,0,0.00%
+1972,Linda Jenness,Georgia,N,Socialist Workers,SW,"83,380",0.11%,0,0.00%
+1972,Benjamin Spock,California,N,People's,PP,"78,759",0.10%,0,0.00%
+1972,Louis Fisher,Illinois,N,Socialist Labor,SL,"53,814",0.07%,0,0.00%
+1972,Gus Hall,New York,N,Communist,C,"25,598",0.03%,0,0.00%
+1972,Evelyn Reed,New York,N,Socialist Workers,SW,"13,878",0.02%,0,0.00%
+1972,Harold Munn,Michigan,N,Prohibition,P,"13,497",0.02%,0,0.00%
+1972,John G. Hospers,California,N,Libertarian,LT,"3,674",0.00%,1,0.19%
+1972,John Mahalchik,New Jersey,N,America First,AF,"1,743",0.00%,0,0.00%
+1976,James E. Carter Jr.,Georgia,N,Democratic,D,"40,831,881",50.08%,297,55.20%
+1976,Gerold R. Ford Jr.,Michigan,Y,Republican,R,"39,148,634",48.02%,240,44.61%
+1976,Ronald W. Reagan,California,N,Republican,R,0,0.00%,1,0.19%
+1976,Eugene McCarthy,Minnesota,N,Independent,I,"740,460",0.91%,0,0.00%
+1976,Roger MacBride,Virginia,N,Libertarian,LT,"172,557",0.21%,0,0.00%
+1976,Lester Maddox,Georgia,N,American Independent,AI,"170,274",0.21%,0,0.00%
+1976,Thomas J. Anderson,Tennessee,N,American,AP,"158,271",0.19%,0,0.00%
+1976,Peter Camejo,California,N,Socialist Workers,SW,"90,986",0.11%,0,0.00%
+1976,Gus Hall,New York,N,Communist,C,"58,709",0.07%,0,0.00%
+1976,Margaret Wright,California,N,People's,PP,"49,013",0.06%,0,0.00%
+1976,Lyndon LaRouche,New York,N,US Labor,UL,"40,043",0.05%,0,0.00%
+1980,Ronald W. Reagan,California,N,Republican,R,"43,903,230",50.75%,489,90.89%
+1980,James E. Carter Jr.,Georgia,Y,Democratic,D,"35,480,115",41.01%,49,9.11%
+1980,John B. Anderson,Illinois,N,Independent,I,"5,719,850",6.61%,0,0.00%
+1980,Edward E. Clark,California,N,Libertarian,LT,"921,128",1.06%,0,0.00%
+1980,Barry Commoner,Missouri,N,Citizens,CZ,"233,052",0.27%,0,0.00%
+1980,Gus Hall,New York,N,Communist,C,"44,933",0.05%,0,0.00%
+1980,John R. Rarick,Louisiana,N,American Independent,AI,"40,906",0.05%,0,0.00%
+1980,Clifton DeBerry,California,N,Socialist Workers,CW,"38,738",0.04%,0,0.00%
+1980,Ellen C. McCormack,New York,N,Right to Life,RL,"32,320",0.04%,0,0.00%
+1980,Maureen Smith,California,N,Peace and Freedom,PF,"18,116",0.02%,0,0.00%
+1984,Ronald W. Reagan,California,Y,Republican,R,"54,455,472",58.77%,525,97.58%
+1984,Walter F. Mondale,Minnesota,N,Democratic,D,"37,577,352",40.56%,13,2.42%
+1984,David Bergland,California,N,Libertarian,LT,"228,111",0.25%,0,0.00%
+1984,Lyndon LaRouche,Virginia,N,Independent,I,"78,809",0.09%,0,0.00%
+1984,Sonia Johnson,Idaho,N,Citizens,CZ,"72,161",0.08%,0,0.00%
+1984,Bob Richards,Texas,N,Populist,PP,"66,324",0.07%,0,0.00%
+1984,Dennis L. Serrette,New Jersey,N,New Alliance,NA,"46,853",0.05%,0,0.00%
+1984,Gus Hall,New York,N,Communist,C,"36,386",0.04%,0,0.00%
+1984,Melvin T. Mason,California,N,Socialist Workers,SW,"24,699",0.03%,0,0.00%
+1984,Larry Holmes,New York,N,Workers World,WW,"17,985",0.02%,0,0.00%
+1988,George H. W. Bush,Texas,N,Republican,R,"48,886,597",53.37%,426,79.18%
+1988,Michael S. Dukakis,Massachusetts,N,Democratic,D,"41,809,476",45.65%,111,20.63%
+1988,Lloyd M. Bentsen Jr.,Texas,N,Democratic,D,0,0.00%,1,0.19%
+1988,Ronald E. Paul,Texas,N,Libertarian,LT,"431,750",0.47%,0,0.00%
+1988,Lenora B. Fulani,Pennsylvania,N,New Alliance,NA,"217,221",0.24%,0,0.00%
+1992,Bill Clinton,Arkansas,N,Democratic,D,"44,909,889",43.01%,370,68.77%
+1992,George H. W. Bush,Texas,Y,Republican,R,"39,104,550",37.45%,168,31.23%
+1992,Ross Perot,Texas,N,Independent,I,"19,743,821",18.91%,0,0.00%
+1992,Andre V. Marrou,Alaska,N,Libertarian,LT,"290,087",0.28%,0,0.00%
+1992,Bo Gritz,Nevada,N,Populist,PP,"106,152",0.10%,0,0.00%
+1992,Lenora Fulani,New York,N,New Alliance,NA,"73,622",0.07%,0,0.00%
+1992,Howard J. Phillips,Virginia,N,US Taxpayers,UT,"43,369",0.04%,0,0.00%
+1996,Bill Clinton,Arkansas,Y,Democratic,D,"47,401,185",49.23%,379,70.45%
+1996,Robert J. Dole,Kansas,N,Republican,R,"39,197,469",40.71%,159,29.55%
+1996,Ross Perot,Texas,N,Reform,RF,"8,085,294",8.40%,0,0.00%
+1996,Ralph Nader,Connecticut,N,Green,G,"685,297",0.71%,0,0.00%
+1996,Harry E. Browne,Tennessee,N,Libertarian,LT,"485,759",0.50%,0,0.00%
+1996,Howard J. Phillips,Virginia,N,US Taxpayers,UT,"184,656",0.19%,0,0.00%
+1996,John S. Hagelin,Iowa,N,Natural Law,NL,"113,670",0.12%,0,0.00%
+2000,George W. Bush,Texas,N,Republican,R,"50,456,002",47.86%,271,50.37%
+2000,Al Gore Jr.,Tennessee,N,Democratic,D,"50,999,897",48.38%,266,49.44%
+2000,Ralph Nader,Connecticut,N,Green,G,"2,882,955",2.73%,0,0.00%
+2000,Pat Buchanan,Virginia,N,Reform,RF,"448,895",0.43%,0,0.00%
+2000,Harry Browne,Tennessee,N,Libertarian,LT,"384,431",0.36%,0,0.00%
+2000,Howard J. Phillips,Virginia,N,Constitution (1999),CT,"98,020",0.09%,0,0.00%
+2000,John Hagelin,Iowa,N,Natural Law,NL,"83,714",0.08%,0,0.00%
+2004,George W. Bush,Texas,Y,Republican,R,"62,040,610",50.73%,286,53.16%
+2004,John F. Kerry,Massachusetts,N,Democratic,D,"59,028,444",48.27%,251,46.65%
+2004,John Edwards,North Carolina,N,Democratic,D,5,0.00%,1,0.19%
+2004,Ralph Nader,Connecticut,N,Independent,I,"465,650",0.38%,0,0.00%
+2004,Michael Badnarik,Texas,N,Libertarian,LT,"397,265",0.32%,0,0.00%
+2004,Michael Peroutka,Maryland,N,Constitution (1999),CT,"143,630",0.12%,0,0.00%
+2004,David Cobb,Texas,N,Green,G,"119,859",0.10%,0,0.00%
+2004,Leonard Peltier,Pennsylvania,N,Peace and Freedom,PF,"27,607",0.02%,0,0.00%
+2004,Walt Brown,Oregon,N,Socialist,S,"10,837",0.01%,0,0.00%
+2004,Roger Calero,New York,N,Socialist Workers,SW,"3,689",0.00%,0,0.00%
+2004,Thomas Harens,Minnesota,N,Christian Freedom,CF,"2,387",0.00%,0,0.00%
+2008,Barack H. Obama II,Illinois,N,Democratic,D,"69,498,516",52.93%,365,67.84%
+2008,John S. McCain III,Arizona,N,Republican,R,"59,948,323",45.65%,173,32.16%
+2008,Ralph Nader,Connecticut,N,Independent,I,"739,034",0.56%,0,0.00%
+2008,Bob Barr,Georgia,N,Libertarian,LT,"523,715",0.40%,0,0.00%
+2008,Chuck Baldwin,Florida,N,Constitution (1999),CT,"199,750",0.15%,0,0.00%
+2008,Cynthia McKinney,Georgia,N,Green,G,"161,797",0.12%,0,0.00%
+2008,Alan Keyes,New York,N,America Independent,AI,"47,941",0.04%,0,0.00%
+2012,Barack H. Obama II,Illinois,Y,Democratic,D,"65,915,795",51.06%,332,61.71%
+2012,Mitt Romney,Massachusetts,N,Republican,R,"60,933,504",47.20%,206,38.29%
+2012,Gary E. Johnson,New Mexico,N,Libertarian,LT,"1,275,971",0.99%,0,0.00%
+2012,Jill E. Stein,Massachusetts,N,Green,G,"469,627",0.36%,0,0.00%
+2012,Virgil H. Goode Jr.,Virginia,N,Constitution (1999),CT,"122,389",0.09%,0,0.00%
+2012,Roseanne C. Barr,Utah,N,Peace and Freedom,PF,"67,326",0.05%,0,0.00%
+2012,Ross C. Anderson,Utah,N,Justice,J,"43,018",0.03%,0,0.00%
+2012,Thomas C. Hoefling,Nebraska,N,America's,AS,"40,628",0.03%,0,0.00%
+2016,Donald J. Trump,New York,N,Republican,R,"62,984,828",46.09%,306,56.88%
+2016,Hillary R. Clinton,New York,N,Democratic,D,"65,853,514",48.18%,232,43.12%
+2016,Gary E. Johnson,New Mexico,N,Libertarian,LT,"4,489,341",3.28%,0,0.00%
+2016,Jill E. Stein,Massachusetts,N,Green,G,"1,457,218",1.07%,0,0.00%
+2016,Evan McMullin,Utah,N,Independent,I,"731,991",0.54%,0,0.00%
+2016,Darrell Castle,Tennessee,N,Constitution (1999),CT,"203,090",0.15%,0,0.00%
+2016,Gloria La Riva,California,N,Socialism and Liberation,PSL,"74,401",0.05%,0,0.00%
+2020,Joseph R. Biden Jr.,Delaware,N,Democratic,D,"81,268,924",51.31%,306,56.88%
+2020,Donald J. Trump,Florida,N,Republican,R,"74,216,154",46.86%,232,43.12%
+2020,Jo Jorgensen,South Carolina,N,Libertarian,LT,"1,865,724",1.18%,0,0.00%
+2020,Howard G. Hawkins,New York,N,Green,G,"405,035",0.26%,0,0.00%
