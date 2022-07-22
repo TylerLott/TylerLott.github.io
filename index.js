@@ -150,9 +150,7 @@ let set_year = async (year) => {
   d3.select("div#dataViewer").selectAll("*").remove()
   // GET DATA
   if (!raw_data) {
-    raw_data = await d3.csv(
-      "https://raw.githubusercontent.com/TylerLott/TylerLott.github.io/main/election.csv"
-    )
+    raw_data = await d3.csv("https://TylerLott.github.io/election.csv")
   }
   // PROCESS DATA
   // get max vote, number of electoral votes for winner, total votes
