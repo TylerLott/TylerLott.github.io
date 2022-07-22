@@ -1,6 +1,41 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #eae0d5;
+}
+h1 {
+  font-size: 3.5vw;
+  font-weight: 500;
+  letter-spacing: 0.02ch;
+  margin: 30px;
+  color: #eae0d5;
+}
+h2 {
+  font-size: 3vw;
+  font-weight: 900;
+  letter-spacing: 0.5ch;
+  padding: 0;
+  margin: 0;
+  margin-top: 3vw;
+  line-height: 0.9;
+  color: #22333b;
+}
+h3 {
+  font-size: 2.5vw;
+  font-weight: 100;
+  margin: 0;
+  color: #22333b;
+}
+p {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #22333b;
+}
 .data-container {
   display: grid;
-  grid-template-columns: 25% 25% 20% 25% 5%;
+  grid-template-columns: 25% 25% 15% 30% 5%;
   grid-template-rows: auto;
   grid-template-areas:
     "head head head head head"
@@ -13,17 +48,17 @@
 .next-button-container {
   grid-area: next;
   display: flex;
-  height: 50%;
-  width: 80%;
-  background-color: blue;
-  border-radius: 5px;
+  height: 30%;
+  width: 70%;
+  border-radius: 1vw;
+  border: 2px #c6ac8f solid;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   transition: 1s all;
 }
 .next-button-container:hover {
-  background-color: red;
+  background-color: #e4ccb3;
 }
 .legend {
   grid-area: legend;
@@ -31,10 +66,13 @@
 }
 .timeline {
   grid-area: time;
+  margin-left: 10%;
+  width: 80%;
 }
 .details {
   grid-area: info;
   height: 70%;
+  align-self: flex-start;
 }
 .plot-container {
   grid-area: plot;
@@ -42,7 +80,7 @@
 }
 .data-header {
   grid-area: head;
-  height: 50px;
+  background-color: #0a0908;
 }
 .svg-container {
   display: inline-block;
@@ -57,4 +95,43 @@
   position: absolute;
   top: 10px;
   left: 0;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #22333b;
+}
+.slide-container {
+  display: flex;
+  margin: 0;
+  visibility: hidden;
+  align-items: center;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #22333b;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #22333b;
+  cursor: pointer;
 }

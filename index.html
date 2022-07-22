@@ -8,17 +8,42 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
-  <body onload="init()">
+  <body onload="set_year(1804)">
     <div class="data-container">
-      <div class="data-header"></div>
+      <div class="data-header"><h1>US ELECTION POLARIZATION</h1></div>
       <div class="plot-container">
         <div id="dataViewer"></div>
       </div>
-      <div class="details">det</div>
-      <div class="legend">leg</div>
-      <div class="next-button-container"><h2>></h2></div>
-      <div class="timeline">time</div>
+      <div class="details"><div id="details"></div></div>
+      <div class="legend" id="legend"></div>
+      <div class="next-button-container" onclick="next_pg()">
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="slide-container" id="slidecontainer">
+        <h3 style="margin-right: 10px">1804</h3>
+        <input
+          type="range"
+          min="0"
+          max="54"
+          value="54"
+          class="slider"
+          id="electionyear"
+        />
+        <h3 style="margin-left: 10px">2022</h3>
+      </div>
     </div>
   </body>
 </html>

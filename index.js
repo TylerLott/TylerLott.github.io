@@ -14,15 +14,22 @@
 //       return "Year" + d.Year
 //     })
 // }
-
 let n = 200
 let m = 10
 let color = d3.scaleOrdinal(d3.range(m), d3.schemeCategory10)
 let height = 600
 let width = 600
 
+let page = 0
+let page_years = [1804, 2016, 2020]
+
+let raw_data
+
+//////////////////////////////////////////////////////////////////////
+// SETUP FOR SIMULATION
+//////////////////////////////////////////////////////////////////////
 function forceCluster() {
-  const strength = 0.2
+  const strength = 0.01
   let nodes
 
   function force(alpha) {
@@ -41,9 +48,9 @@ function forceCluster() {
 }
 
 function forceCollide() {
-  const alpha = 0.4 // fixed for greater rigidity!
-  const padding1 = 2 // separation between same-color nodes
-  const padding2 = 6 // separation between different-color nodes
+  const alpha = 0.2 // fixed for greater rigidity!
+  const padding1 = 4 // separation between same-color nodes
+  const padding2 = 7 // separation between different-color nodes
   let nodes
   let maxRadius
 
@@ -103,7 +110,7 @@ function centroid(nodes) {
 
 drag = (simulation) => {
   function dragstarted(event, d) {
-    if (!event.active) simulation.alphaTarget(0.3).restart()
+    if (!event.active) simulation.alphaTarget(0.01).restart()
     d.fx = d.x
     d.fy = d.y
   }
@@ -126,30 +133,88 @@ drag = (simulation) => {
     .on("end", dragended)
 }
 
-let init = async () => {
-  let data = {
-    children: Array.from(
-      d3.group(
-        Array.from({ length: n }, (_, i) => ({
-          group: (Math.random() * m) | 0,
-          value: 1 + Math.random(),
-        })),
-        (d) => d.group
-      ),
-      ([, children]) => ({ children })
-    ),
-  }
-  console.log(data)
-  // const test_data = await d3.csv("https://tylerlott.github.io/election.csv", (d)=>{
-  //   return {
-  //     group: d.CandidateName,
-  //     value: d.PopularVote
-  //   }
-  // })
+//////////////////////////////////////////////////////////////////////
+// HELPER FUNCTION
+//////////////////////////////////////////////////////////////////////
+let numberWithCommas = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+}
 
+//////////////////////////////////////////////////////////////////////
+// MAIN FUNCITON
+//////////////////////////////////////////////////////////////////////
+
+let set_year = async (year) => {
+  // REMOVE olds
+  d3.select("div#details").selectAll("*").remove()
+  d3.select("div#dataViewer").selectAll("*").remove()
+  // GET DATA
+  if (!raw_data) {
+    raw_data = await d3.csv(
+      "https://raw.githubusercontent.com/TylerLott/TylerLott.github.io/main/election.csv"
+    )
+  }
+  // PROCESS DATA
+  // get max vote, number of electoral votes for winner, total votes
+  let cleaned_data = raw_data.reduce((group, r) => {
+    if (year === parseInt(r.ElectionYear)) {
+      let { CandParty, CandidateName, PopularVote, ElectoralVotes } = r
+      PopularVote = PopularVote.replaceAll(",", "")
+      ElectoralVotes = ElectoralVotes.replaceAll(",", "")
+      group.push({
+        group: CandParty,
+        value: parseInt(PopularVote),
+        elecVote: parseInt(ElectoralVotes),
+        name: CandidateName,
+      })
+    }
+    return group
+  }, [])
+  const max_vote = Math.max(...cleaned_data.map((o) => o.value))
+  const winner_elec_votes = Math.max(...cleaned_data.map((o) => o.elecVote))
+  const total_vote = cleaned_data.reduce((v, r) => {
+    v += r.value
+    return v
+  }, 0)
+  // get the number of votes each node will represent
+  let node_value = 100
+  if (10_000 < max_vote && max_vote <= 200_000) {
+    node_value = 1_000
+  } else if (200_000 < max_vote && max_vote <= 1_000_000) {
+    node_value = 10_000
+  } else if (1_000_000 < max_vote && max_vote <= 25_000_000) {
+    node_value = 100_000
+  } else if (25_000_000 < max_vote && max_vote <= 50_000_000) {
+    node_value = 250_000
+  } else if (50_000_000 < max_vote) {
+    node_value = 500_000
+  }
+  // create nodes
+  temp_data = cleaned_data.reduce((n, r) => {
+    for (let i = 0; i < Math.ceil(r.value / node_value); i++) {
+      n.push({ name: r.name, group: r.group, value: 2 + Math.random() })
+    }
+    return n
+  }, [])
+  temp_data = temp_data.reduce((g, r) => {
+    const { group } = r
+    g[group] = g[group] ?? []
+    g[group].push(r)
+    return g
+  }, {})
+  let final_data = []
+  for (const [key, val] of Object.entries(temp_data)) {
+    final_data.push({ children: val })
+  }
+  final_data = { children: final_data }
+
+  // CREATE CLUSTER
+  //   tooltip on points
+  //     - party
+  //     -
   let pack = () =>
     d3.pack().size([width, height]).padding(1)(
-      d3.hierarchy(data).sum((d) => d.value)
+      d3.hierarchy(final_data).sum((d) => d.value)
     )
   const nodes = pack().leaves()
 
@@ -174,15 +239,18 @@ let init = async () => {
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("cx", (d) => 10)
-    .attr("cy", (d) => 10)
+    .attr("cx", (d) => {
+      let val = 1000 * Math.random()
+      return val
+    })
+    .attr("cy", (d) => 1000 * Math.random())
     .attr("fill", (d) => color(d.data.group))
     .call(drag(simulation))
 
   node
     .transition()
     .delay((d, i) => Math.random() * 500)
-    .duration(750)
+    .duration(100)
     .attrTween("r", (d) => {
       const i = d3.interpolate(0, d.r)
       return (t) => (d.r = i(t))
@@ -192,10 +260,52 @@ let init = async () => {
     node.attr("cx", (d) => d.x).attr("cy", (d) => d.y)
   })
 
-  return svg.node()
+  // CREATE DETAILS
+  //   year
+  //   election winner
+  //   election winning party
+  //   election total votes
+  elec_winner = raw_data.filter(
+    (d) =>
+      parseInt(d.ElectoralVotes.replaceAll(",", "")) === winner_elec_votes &&
+      parseInt(d.ElectionYear) === year
+  )[0]
+  d3.select("div#details")
+    .append("h2")
+    .text(elec_winner.CandidateName.toUpperCase())
+  d3.select("div#details").append("h3").text(year)
+  d3.select("div#details")
+    .append("p")
+    .text("Total Voting Population: " + numberWithCommas(total_vote))
+  d3.select("div#details")
+    .append("p")
+    .text("Party: " + elec_winner.CandParty)
+
+  // CREATE LEGEND
+  //  colored point | party name | votes
+
+  // return svg.node()
 }
 
-// change to second view
-//   increment election year up to
+//////////////////////////////////////////////////////////////////////
+// NEXT PG FOR NARRATIVE
+//////////////////////////////////////////////////////////////////////
 
-// change to third view
+let next_pg = () => {
+  page += 1
+  if (page < page_years.length) {
+    set_year(page_years[page])
+  } else {
+    // open timeline
+    document.getElementById("slidecontainer").style.visibility = "visible"
+    let slider = document.getElementById("electionyear")
+
+    console.log("dl,", slider)
+    slider.oninput = () => {
+      console.log("val", slider.value)
+      let year = 1804 + slider.value * 4
+      set_year(year)
+      console.log("new year ", year)
+    }
+  }
+}
