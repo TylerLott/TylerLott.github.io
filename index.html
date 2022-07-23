@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Data Visualization Final Project</title>
-    <link rel="stylesheet" href="https://tylerlott.github.io/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://tylerlott.github.io/index.js"></script>
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,28 +21,36 @@
   </head>
   <body onload="set_year(1804)">
     <div class="data-container">
-      <div class="data-header"><h1>US ELECTION POLARIZATION</h1></div>
+      <div class="data-header">
+        <div class="data-head-inner">
+          <h1>US ELECTION POLARIZATION</h1>
+        </div>
+      </div>
       <div class="plot-container">
         <div id="dataViewer"></div>
       </div>
       <div class="details"><div id="details"></div></div>
-      <div class="legend" id="legend"></div>
-      <div class="next-button-container" onclick="next_pg()">
+      <div class="notes"></div>
+      <div class="legend">
+        <h3 style="text-align: right">LEGEND</h3>
+        <div id="legend"></div>
+      </div>
+      <div id="nxt-btn" class="next-button-container" onclick="next_pg()">
         <span class="material-symbols-outlined"> arrow_forward_ios </span>
       </div>
-    </div>
-    <div class="timeline">
-      <div class="slide-container" id="slidecontainer">
-        <h3 style="margin-right: 10px">1804</h3>
-        <input
-          type="range"
-          min="0"
-          max="54"
-          value="54"
-          class="slider"
-          id="electionyear"
-        />
-        <h3 style="margin-left: 10px">2022</h3>
+      <div class="timeline">
+        <div class="slide-container" id="slidecontainer">
+          <h3 style="margin-right: 10px">1804</h3>
+          <input
+            type="range"
+            min="0"
+            max="54"
+            value="54"
+            class="slider"
+            id="electionyear"
+          />
+          <h3 style="margin-left: 10px">2022</h3>
+        </div>
       </div>
     </div>
   </body>

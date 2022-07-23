@@ -1,21 +1,5 @@
-// initialize the visualization
-//   load data
-//   first view
-//async function init() {
-//   const data = await d3.csv("https://tylerlott.github.io/election.csv")
-//   // show 1804 election
-//   d3.select("body")
-//     .selectAll("p")
-//     .data(data)
-//     .enter()
-//     .append("p")
-//     .html((d, i) => {
-//       console.log(d.Year, i)
-//       return "Year" + d.Year
-//     })
-// }
 let n = 200
-let m = 10
+let m = 15
 let color = d3.scaleOrdinal(d3.range(m), d3.schemeCategory10)
 let height = 600
 let width = 600
@@ -49,8 +33,8 @@ function forceCluster() {
 
 function forceCollide() {
   const alpha = 0.2 // fixed for greater rigidity!
-  const padding1 = 4 // separation between same-color nodes
-  const padding2 = 7 // separation between different-color nodes
+  const padding1 = 2 // separation between same-color nodes
+  const padding2 = 4 // separation between different-color nodes
   let nodes
   let maxRadius
 
@@ -110,7 +94,7 @@ function centroid(nodes) {
 
 drag = (simulation) => {
   function dragstarted(event, d) {
-    if (!event.active) simulation.alphaTarget(0.01).restart()
+    if (!event.active) simulation.alphaTarget(0.05).restart()
     d.fx = d.x
     d.fy = d.y
   }
@@ -140,6 +124,20 @@ let numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 }
 
+let get_color = (g) => {
+  if (g === "Republican") {
+    return "red"
+  } else if (g === "Democratic") {
+    return "blue"
+  } else if (g === "Libertarian") {
+    return "#FED105"
+  } else if (g === "Green") {
+    return "#508C1B"
+  } else {
+    return color(g)
+  }
+}
+
 //////////////////////////////////////////////////////////////////////
 // MAIN FUNCITON
 //////////////////////////////////////////////////////////////////////
@@ -147,6 +145,7 @@ let numberWithCommas = (x) => {
 let set_year = async (year) => {
   // REMOVE olds
   d3.select("div#details").selectAll("*").remove()
+  d3.select("div#legend").selectAll("*").remove()
   d3.select("div#dataViewer").selectAll("*").remove()
   // GET DATA
   if (!raw_data) {
@@ -159,12 +158,14 @@ let set_year = async (year) => {
       let { CandParty, CandidateName, PopularVote, ElectoralVotes } = r
       PopularVote = PopularVote.replaceAll(",", "")
       ElectoralVotes = ElectoralVotes.replaceAll(",", "")
-      group.push({
-        group: CandParty,
-        value: parseInt(PopularVote),
-        elecVote: parseInt(ElectoralVotes),
-        name: CandidateName,
-      })
+      if (PopularVote > 0) {
+        group.push({
+          group: CandParty,
+          value: parseInt(PopularVote),
+          elecVote: parseInt(ElectoralVotes),
+          name: CandidateName,
+        })
+      }
     }
     return group
   }, [])
@@ -242,7 +243,7 @@ let set_year = async (year) => {
       return val
     })
     .attr("cy", (d) => 1000 * Math.random())
-    .attr("fill", (d) => color(d.data.group))
+    .attr("fill", (d) => get_color(d.data.group))
     .call(drag(simulation))
 
   node
@@ -281,8 +282,82 @@ let set_year = async (year) => {
 
   // CREATE LEGEND
   //  colored point | party name | votes
+  const leg_head = d3
+    .select("div#legend")
+    .append("div")
+    .classed("legend-row", true)
+  leg_head
+    .append("p")
+    .classed("legend-point", true)
+    .text("")
+    .style("padding-bottom", "3px")
+  leg_head
+    .append("p")
+    .classed("legend-candid", true)
+    .text("CANDIDATE")
+    .style("padding-bottom", "3px")
+  leg_head
+    .append("p")
+    .classed("legend-party", true)
+    .text("PARTY")
+    .style("padding-bottom", "3px")
+  leg_head
+    .append("p")
+    .classed("legend-votes", true)
+    .text("VOTES")
+    .style("padding-bottom", "3px")
+  for (i = 0; i < cleaned_data.length; i++) {
+    const col = color(cleaned_data[i].group)
+    const leg = d3
+      .select("div#legend")
+      .append("div")
+      .classed("legend-row", true)
+    leg
+      .append("svg")
+      .classed("legend-point", true)
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 120 50")
+      .append("circle")
+      .attr("cx", "50%")
+      .attr("cy", "50%")
+      .attr("r", "1vw")
+      .style("fill", col)
+    leg
+      .append("p")
+      .classed("legend-party", true)
+      .text(cleaned_data[i].group)
+      .style("font-size", "1vw")
+    leg
+      .append("p")
+      .classed("legend-candid", true)
+      .text(cleaned_data[i].name)
+      .style("font-size", "1vw")
+    leg
+      .append("p")
+      .classed("legend-votes", true)
+      .text(numberWithCommas(cleaned_data[i].value))
+      .style("font-size", "1vw")
+  }
+  const leg_foot = d3
+    .select("div#legend")
+    .append("div")
+    .classed("legend-node-val", true)
+  leg_foot
+    .append("svg")
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 20 20")
+    .style("width", "10%")
+    .append("circle")
+    .attr("cx", "50%")
+    .attr("cy", "50%")
+    .attr("r", "0.25vw")
+    .style("stroke", "black")
+    .style("fill", "none")
+  leg_foot.append("p").text(" = " + numberWithCommas(node_value) + " votes")
 
-  // return svg.node()
+  setTimeout(() => {
+    document.getElementById("nxt-btn").style.animation = "blinker 1.5s linear 3"
+  }, 7000)
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -290,6 +365,7 @@ let set_year = async (year) => {
 //////////////////////////////////////////////////////////////////////
 
 let next_pg = () => {
+  let nxt_btn = document.getElementById("nxt-btn")
   page += 1
   if (page < page_years.length) {
     set_year(page_years[page])
@@ -298,12 +374,15 @@ let next_pg = () => {
     document.getElementById("slidecontainer").style.visibility = "visible"
     let slider = document.getElementById("electionyear")
 
-    console.log("dl,", slider)
     slider.oninput = () => {
-      console.log("val", slider.value)
       let year = 1804 + slider.value * 4
       set_year(year)
-      console.log("new year ", year)
     }
+  }
+  if (page < page_years.length - 1) {
+    setTimeout(() => {
+      console.log("running")
+      nxt_btn.style.animation = "blinker 1.5s linear 3"
+    }, 7000)
   }
 }
