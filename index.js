@@ -320,7 +320,7 @@ let set_year = async (year) => {
       .append("circle")
       .attr("cx", "50%")
       .attr("cy", "50%")
-      .attr("r", "1vw")
+      .attr("r", "0.8vw")
       .style("fill", col)
     leg
       .append("p")
@@ -350,7 +350,7 @@ let set_year = async (year) => {
     .append("circle")
     .attr("cx", "50%")
     .attr("cy", "50%")
-    .attr("r", "0.25vw")
+    .attr("r", "0.2vw")
     .style("stroke", "black")
     .style("fill", "none")
   leg_foot.append("p").text(" = " + numberWithCommas(node_value) + " votes")
