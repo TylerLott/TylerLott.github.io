@@ -159,7 +159,6 @@ let set_year = async (year) => {
   d3.select("div#dataViewer").selectAll("*").remove()
   d3.select("div#notes-container").selectAll("p").remove()
   // SET NARRATIVE DESCRIPTION
-  console.log(year in page_desc)
   if (year in page_desc) {
     d3.select("div#notes-container").append("p").text(page_desc[year])
     document.getElementById("notes-container").style.visibility = "visible"
@@ -408,7 +407,6 @@ let next_pg = () => {
   }
   if (page < page_years.length - 1) {
     setTimeout(() => {
-      console.log("running")
       nxt_btn.style.animation = "blinker 1.5s linear 3"
     }, 7000)
   }
