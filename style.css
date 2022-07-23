@@ -73,6 +73,22 @@ p {
   visibility: hidden;
   min-height: 100px;
 }
+.notes p {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #22333b;
+  margin: 20px;
+}
+.notes h3 {
+  font-size: 2vw;
+  font-weight: 100;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  color: #22333b;
+  border-bottom: #9b9d9e 1px solid;
+}
 .legend {
   grid-area: legend;
 }

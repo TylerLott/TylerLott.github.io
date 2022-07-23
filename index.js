@@ -3,11 +3,21 @@ let m = 15
 let color = d3.scaleOrdinal(d3.range(m), d3.schemeCategory10)
 let height = 600
 let width = 600
-
-let page = 0
-let page_years = [1804, 2016, 2020]
-
 let raw_data
+
+//////////////////////////////////////////////////////////////////////
+// NARRATIVE PAGES
+//////////////////////////////////////////////////////////////////////
+let page = 0
+const page_years = [1804, 1824, 1832, 1912, 1976, 2020]
+const page_desc = {
+  1804: "At the origins of the United States, a system of voting was established to allow the people to have a voice in their representation in government",
+  1824: "Four candidates from the same party split the votes for the Democratic-Republican party.",
+  1832: "Informal caucuses were held to discuss the potential candidates and select the best candidate for a given party before elections were held.",
+  1912: "The Presidential Primary was implemented by North Dakota. This formalized the candidate selection process. Each party would conduct their own elections to determine the candidate they would like to 'pledge' as their representative for the state-wide election.",
+  1976: "In the winner-take-all format of US elections, two dominant idealogical parties formed. These parties shifted from their prior idealologies to idealologies that would encompass more of the populous, creating two large, broad scoped, parties that split the country.",
+  2020: "Today US elections are split nearly 50/50 between the Republican and Democratic parties.",
+}
 
 //////////////////////////////////////////////////////////////////////
 // SETUP FOR SIMULATION
@@ -147,6 +157,15 @@ let set_year = async (year) => {
   d3.select("div#details").selectAll("*").remove()
   d3.select("div#legend").selectAll("*").remove()
   d3.select("div#dataViewer").selectAll("*").remove()
+  d3.select("div#notes-container").selectAll("p").remove()
+  // SET NARRATIVE DESCRIPTION
+  console.log(year in page_desc)
+  if (year in page_desc) {
+    d3.select("div#notes-container").append("p").text(page_desc[year])
+    document.getElementById("notes-container").style.visibility = "visible"
+  } else {
+    document.getElementById("notes-container").style.visibility = "hidden"
+  }
   // GET DATA
   if (!raw_data) {
     raw_data = await d3.csv("https://TylerLott.github.io/election.csv")
@@ -307,7 +326,7 @@ let set_year = async (year) => {
     .text("VOTES")
     .style("padding-bottom", "3px")
   for (i = 0; i < cleaned_data.length; i++) {
-    const col = color(cleaned_data[i].group)
+    const col = get_color(cleaned_data[i].group)
     const leg = d3
       .select("div#legend")
       .append("div")
@@ -351,8 +370,7 @@ let set_year = async (year) => {
     .attr("cx", "50%")
     .attr("cy", "50%")
     .attr("r", "0.2vw")
-    .style("stroke", "black")
-    .style("fill", "none")
+    .style("fill", "#cacdcf")
   leg_foot.append("p").text(" = " + numberWithCommas(node_value) + " votes")
 
   setTimeout(() => {
@@ -367,10 +385,19 @@ let set_year = async (year) => {
 let next_pg = () => {
   let nxt_btn = document.getElementById("nxt-btn")
   page += 1
-  if (page < page_years.length) {
+  if (page < page_years.length - 1) {
     set_year(page_years[page])
-  } else {
+  } else if (page === page_years.length - 1) {
     // open timeline
+    set_year(page_years[page])
+    document.getElementById("slidecontainer").style.visibility = "visible"
+    let slider = document.getElementById("electionyear")
+
+    slider.oninput = () => {
+      let year = 1804 + slider.value * 4
+      set_year(year)
+    }
+  } else {
     document.getElementById("slidecontainer").style.visibility = "visible"
     let slider = document.getElementById("electionyear")
 
